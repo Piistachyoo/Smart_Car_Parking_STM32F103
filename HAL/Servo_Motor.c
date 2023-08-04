@@ -27,14 +27,14 @@ void Servo1_Entry_Gate_Init(void)
 //Direction Up or Down
 void Servo1_Entry_Gate(uint8 Direction)
 {
-	if(Direction == UP)
+	if(Direction == SERVO_UP)
 	{
 		//servo1 Enter gate up +90
 		MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, 1);
 		dus(500);
 		MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, 0);
 	}
-	if(Direction==Down)
+	if(Direction==SERVO_DOWN)
 	{
 		//servo1 Enter gate down -90
 		MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, 1);
@@ -59,7 +59,7 @@ void Servo2_Exit_Gate_Init(void)
 //Direction Up or Down
 void Servo2_Exit_Gate(uint8 Direction)
 {
-	if(Direction == UP)
+	if(Direction == SERVO_UP)
 	{
 		//servo2 Exit gate up +90
 		MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, 1);
@@ -67,7 +67,7 @@ void Servo2_Exit_Gate(uint8 Direction)
 		MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, 0);
 	}
 
-	if(Direction == Down)
+	if(Direction == SERVO_DOWN)
 	{
 		//servo2 Exit gate down -90
 		MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, 1);

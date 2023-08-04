@@ -134,6 +134,7 @@ void LCD_Send_Command(LCD_t* LCD_cfg, uint8 command){
 
 	MCAL_STK_Delay1ms(1);
 	LCD_Send_Enable_Signal(LCD_cfg);
+	MCAL_STK_Delay1ms(100);
 }
 
 /**=============================================
@@ -173,6 +174,7 @@ void LCD_Send_Char(LCD_t* LCD_cfg, uint8 Char){
 
 	MCAL_STK_Delay1ms(1);
 	LCD_Send_Enable_Signal(LCD_cfg);
+	MCAL_STK_Delay1ms(100);
 }
 
 /**=============================================

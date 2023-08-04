@@ -48,6 +48,7 @@
 #define RCC_I2C2		(uint8)0x0E
 #define RCC_DAC			(uint8)0x0F
 #define RCC_CRC			(uint8)0x10
+#define RCC_TIM2		(uint8)0x11
 
 /*
  * =============================================

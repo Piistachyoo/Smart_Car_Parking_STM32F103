@@ -27,13 +27,12 @@
 #define KEYPAD_ROWS	4
 #define ROW0		GPIO_PIN_0
 #define ROW1		GPIO_PIN_1
-#define ROW2		GPIO_PIN_12
-#define ROW3		GPIO_PIN_13
-#define KEYPAD_COLS	4
+#define ROW2		GPIO_PIN_3
+#define ROW3		GPIO_PIN_4
+#define KEYPAD_COLS	3
 #define COL0		GPIO_PIN_5
 #define COL1		GPIO_PIN_6
 #define COL2		GPIO_PIN_7
-#define COL3		GPIO_PIN_8
 
 /*
  * =============================================
